@@ -3,9 +3,9 @@
 }
 
 .btn {
-    background: white;
-    color: #f9218d;
-    border: 1px solid #f9218d;
+    background: radial-gradient(farthest-corner at var(--x,0) var(--y,0),#73fac8,#00bee1)!important;
+    color: #303030;
+    border: 1px;
 }
 
 .card {
