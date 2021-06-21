@@ -1,0 +1,17 @@
+* {
+    outline: 0 !important;
+    text-decoration: none;
+    font-family: regularp;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1a73e8;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
