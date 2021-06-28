@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>nguyenhung9xdev</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/covid.css">
+            <link rel="stylesheet" href="assets/css/style.css" />  
+            
+        <!-- Font Awesome  -->
+            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />   
+        
+        <!-- Adsebse  -->    
+            <script data-ad-client="ca-pub-4899452368061595" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>    
+   </head>
+
+<body>
+        <!-- Preloader Start -->
+        <div id="preloader-active">
+            <div class="preloader d-flex align-items-center justify-content-center">
+                <div class="preloader-inner position-relative">
+                    <div class="preloader-circle"></div>
+                    <div class="preloader-img pere-text">
+                        <img src="assets/img/logo/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader Start -->
+
+    <h1 class="txtcenter tieude">THÔNG TIN CA NHIỄM COVID-19 VIỆT NAM THEO API TỪ BỘ Y TẾ VN</h1>
+
+    <div class="container">
+        <div class="leftSide">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Tỉnh Thành</th>
+                        <th>Số ca khỏi</th>
+                        <th>Số ca đang điều trị</th>
+                        <th>Số ca tử vong</th>
+                        <th>Tổng số ca</th>
+                    </tr>
+                </thead>
+                <tbody id="datatable"></tbody>
+            </table>
+        </div>
+
+        <div class="rightSide">
+            <table class="styled-table" style="width:auto">
+                <thead>
+                    <tr>
+                        <th colspan="4">Tổng cộng</th>
+                    </tr>
+                    <tr>
+                        <th>Số ca khỏi</th>
+                        <th>Số ca đang điều trị</th>
+                        <th>Số ca tử vong</th>
+                        <th>Tổng số ca</th>
+                    </tr>
+                </thead>
+                <tbody id="total"></tbody>
+            </table>
+            <br><br>
+            <div>
+                <canvas id="percentTotalCase" width="389" height="389" style="display: block; box-sizing: border-box; height: 389px; width: 389px;"></canvas>
+            </div>
+            <br><br>
+            <table class="styled-table" style="width:auto">
+                <thead>
+                    <tr>
+                        <th colspan="4">Thống kê 10 ngày qua</th>
+                    </tr>
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Số ca nhiễm mới</th>
+                        <th>Số ca khỏi</th>
+                        <th>Số ca tử vong</th>
+                    </tr>
+                </thead>
+                <tbody id="tenDays"></tbody>
+            </table>
+            <br><br><br><br>
+            <div>
+                <canvas id="tenDaysInfectedChart" width="350" height="175" style="display: block; box-sizing: border-box; height: 175px; width: 350px;"></canvas>
+            </div>
+            <br><br><br><br>
+            <div>
+                <canvas id="tenDaysRecoveredChart" width="350" height="175" style="display: block; box-sizing: border-box; height: 175px; width: 350px;"></canvas>
+            </div>
+            <br><br><br><br>
+            <div>
+                <canvas id="tenDaysDeceasedChart" width="350" height="175" style="display: block; box-sizing: border-box; height: 175px; width: 350px;"></canvas>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr><br>
+
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+
+        <script src="./assets/js/node.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="node.js"></script>
+
+
+</body>
+
+</html>
